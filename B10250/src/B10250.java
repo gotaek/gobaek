@@ -25,7 +25,7 @@ public class B10250 {
 			String xx = Integer.toString(x);
 			String yy = Integer.toString(y);
 			
-			if (y/9==0) {
+			if (y<10) {
 				arr[i]=xx+"0"+yy;
 			}
 			else arr[i]=xx+yy;
@@ -36,5 +36,4 @@ public class B10250 {
 			System.out.println(arr[i]);
 		}
 	}
-
 }

@@ -43,7 +43,6 @@ public class B5622 {
 		
 		System.out.print(count);
 		
-		
 	}
 
 }

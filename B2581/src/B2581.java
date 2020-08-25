@@ -34,6 +34,7 @@ public class B2581 {
 		else {
 			System.out.println(sum);
 			System.out.println(arr[0]);
+			
 		}
 
 	}

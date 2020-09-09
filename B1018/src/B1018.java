@@ -45,12 +45,12 @@ public class B1018 {
 
 				minx = cnt1 > cnt2 ? cnt2 : cnt1;
 				min = min > minx ? minx : min;
-				System.out.printf("%d\n", minx);
+				//System.out.printf("%d\n", minx);
 				
 			}
 		}
 
-		System.out.printf("min:%d", min);
+		System.out.printf("%d", min);
 
 	}
 

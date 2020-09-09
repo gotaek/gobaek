@@ -14,6 +14,7 @@ public class B1002 {
 			int x2 = s.nextInt();
 			int y2 = s.nextInt();
 			int r2 = s.nextInt();
+			
 
 			double d = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 			if (d == 0) {
@@ -25,10 +26,10 @@ public class B1002 {
 
 				}
 			} else {
-				if (d > r1 + r2 || d < r1 || d < r2) {
+				if (d > r1 + r2 || d<Math.abs(r2-r1)) {
 					System.out.printf("%d\n", 0);
 
-				} else if (r1 - r2 == d || r2 - r1 == d || r1 + r2 == d) {
+				} else if (Math.abs(r2-r1)== d || r1 + r2 == d) {
 					System.out.printf("%d\n", 1);
 
 				} else if (r1 + r2 > d) {

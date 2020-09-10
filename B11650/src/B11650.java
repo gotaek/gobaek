@@ -23,7 +23,6 @@ public class B11650 {
 					return Integer.compare(o1[1], o2[1]);
 					
 					return Integer.compare(o1[0], o2[0]); // 나머지는 x좌표를 기준으로 정렬
-			
 			}		
 			
 		});

@@ -24,13 +24,12 @@ public class B1181 {
 					if (e1.compareTo(e2)<0) return -1;
 					else return 1;
 				}
-				if(e1.length() < e2.length()) {		// 두번째 원소가 같다면 첫 번째 원소끼리 비교
+				if(e1.length() < e2.length()) {		
 					return -1;
 				}
 				else {
 					return 1;
 				}
-				
 				
 			}
 			

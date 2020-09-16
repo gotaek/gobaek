@@ -31,12 +31,12 @@ public class B10814 {
 		Collections.sort(members, new Comparator<Judge>() {
             @Override
             public int compare(Judge s1, Judge s2) {
-                if (s1.age< s2.age) {
-                    return -1;
-                } else if (s1.age > s2.age) {
-                    return 1;
-                }
-                return 0;
+//                if (s1.age< s2.age) {
+//                    return -1;
+//                } else if (s1.age > s2.age) {
+//                    return 1;
+//                }
+                return 1;
             }
         });
 

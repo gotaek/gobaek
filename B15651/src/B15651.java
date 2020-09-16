@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.io.*;
 
@@ -23,7 +22,9 @@ public class B15651 {
 
 	static void dfs(int n, int m, int depth) {
 		if (m == depth) {
-			
+			for (int i=1;i<m;i++) {
+				if (arr[i-1]>arr[i]) return;
+			}
 			for (int i : arr) {
 				sb.append(i+" ");
 			}

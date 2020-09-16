@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class B15649 {
+	//main과 dfs 함수에서 공통적으로 사용해야 하므로 이곳에 배열을 생성
 	public static boolean checker[];
 	public static int arr[];
 	
@@ -29,7 +30,7 @@ public class B15649 {
 				checker[i] = true;
 				arr[depth] = i;
 				dfs(n, m, depth + 1);
-				checker[i]=false;
+				checker[i]=false;// 자식노드 방문이 끝나고 돌아오면 방문노드릉 방문하여 다시 false로 변경
 			}
 		}
 		

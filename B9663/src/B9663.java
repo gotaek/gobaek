@@ -1,62 +1,48 @@
 import java.util.Scanner;
-
-public class B9663 {
-	static int cnt;
-	static int N;
-	static boolean board[][];
-
+ 
+public class B9663{
+ 
+	public static int[] board;
+	public static int N;
+	public static int count = 0;
+ 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+ 
 		Scanner s = new Scanner(System.in);
-
 		N = s.nextInt();
-		board = new boolean[N][N];
+		board = new int[N];
+ 
 		queen(0);
-		for(int i=N;i>0;i--) {
-			cnt=cnt/i;
-		}
-		System.out.print(cnt);
-
+		System.out.println(count);
+ 
 	}
-
-	public static boolean possible(int x, int y) {
-		int cross = x + y;
-		int rev_cross = y - x;
-
-		for (int i = 0; i < N; i++) {
-			if (board[i][y] == true)
-				return false;
+ 
+	public static void queen(int n) {
+		
+		if (N == n) {
+			count++;
+			return;
 		}
+ 
 		for (int i = 0; i < N; i++) {
-			if (board[x][i] == true)
-				return false;
+			board[n] = i;
+			if (possible(n)) {
+				queen(n + 1);
+			}
 		}
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if ((i + j == cross || j - i == rev_cross) && board[i][j] == true) {
-					return false;
-				}
+ 
+	}
+ 
+	public static boolean possible(int col) {
+ 
+		for (int i = 0; i < col; i++) {
+			if (board[col] == board[i]) {
+				return false;
+			} 	
+			else if (Math.abs(col - i) == Math.abs(board[col] - board[i])) {
+				return false;
 			}
 		}
 		return true;
-	}
-
-	public static void queen(int n) {
-
-		if (n == N) {
-			cnt++;
-			//System.out.printf("---\n");
-			return;
-		}
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if (possible(i, j)) {
-					//System.out.printf("%d : %d %d \n",n,i,j);
-					board[i][j] = true;
-					queen(n + 1);
-					board[i][j]=false;
-				}
-			}
-		}
 	}
 }

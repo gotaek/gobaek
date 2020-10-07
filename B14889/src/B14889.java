@@ -32,9 +32,7 @@ public class B14889 {
 
 	public static void divide(int num, int n) {
 		if (depth == n) {
-
 			statCalculator();
-
 			return;
 		}
 		for (int i = 0; i < N; i++) {

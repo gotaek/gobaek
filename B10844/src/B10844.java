@@ -15,8 +15,8 @@ public class B10844 {
 			dp[1][i] = 1L;
 		}
 		long sum = 0;
-		for (int i = 1; i < 10; i++) {
-			sum += recur(N, 1);
+		for (int i = 1; i <=9; i++) {
+			sum += recur(N, i);
 		}
 		System.out.println(sum % MOD);
 
@@ -30,7 +30,7 @@ public class B10844 {
 				dp[digit][val] = recur(digit - 1, 1);
 			else if (val == 9)
 				dp[digit][val] = recur(digit - 1, 8);
-			else
+			else 
 				dp[digit][val] = recur(digit - 1, val - 1) + recur(digit - 1, val + 1);
 		}
 		return dp[digit][val] % MOD;

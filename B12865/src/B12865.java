@@ -19,7 +19,6 @@ public class B12865 {
 			st=new StringTokenizer(br.readLine()," ");
 			W[i]=Integer.parseInt(st.nextToken());
 			V[i]=Integer.parseInt(st.nextToken());
-			
 		}
 		
 		for(int i=1;i<=N;i++) {
@@ -32,7 +31,5 @@ public class B12865 {
 			}
 		}System.out.println(dp[N][K]);
 	}
-
-
 
 }

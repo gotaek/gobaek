@@ -11,18 +11,17 @@ public class B3036 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
-		int n=s.nextInt();
-		int arr[]=new int[n];
-		for(int i=0;i<n;i++) {
-			arr[i]=s.nextInt();
+		int n = s.nextInt();
+		int arr[] = new int[n];
+		for (int i = 0; i < n; i++) {
+			arr[i] = s.nextInt();
 		}
-		
-		for(int i=1;i<n;i++) {
-			
-			
-			int gcd=GCD(arr[0],arr[i]);
-			
-			System.out.println(arr[0]/gcd+"/"+arr[i]/gcd);
+
+		for (int i = 1; i < n; i++) {
+
+			int gcd = GCD(arr[0], arr[i]);
+
+			System.out.println(arr[0] / gcd + "/" + arr[i] / gcd);
 		}
 	}
 

@@ -5,4 +5,4 @@
 다음에 가야하는 벽의 위치가 이전에 부신 적이 없고 방문한 적이 없는 배열이면 방문한다.<br>
 다음에 가야하는 벽의 위치가 벽이 아닌경우 방문한 적이 없는 배열이면 방문한다.<br>
 
-링크:https://velog.io/@leeinae/Algorithm-%EB%B0%B1%EC%A4%802206-%EB%B2%BD-%EB%B6%80%EC%88%98%EA%B3%A0-%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0-java
+참고 링크:https://velog.io/@leeinae/Algorithm-%EB%B0%B1%EC%A4%802206-%EB%B2%BD-%EB%B6%80%EC%88%98%EA%B3%A0-%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0-java

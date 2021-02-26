@@ -1,0 +1,13 @@
+# 백준 1717 집합의 표현
+
+union-find set을 이용해야 한다. <br>
+먼저 부모를 저장하는 배열을 만든다. 이 배열은 같은set일 때 같은 번호로 저장될 것이다.<br>
+먼저 find함수이다.<br>
+이 함수는 입력받은 값이 parent의 값과 같다면 그대로 x를 리턴하고 그렇지 않으면 재귀를 돌리면서 parent에 같은 수를 저장해 리턴한다.<br>
+
+union함수는
+find함수를 통해 set을 받아 오고 parent에 저장한다.
+
+isSameParent함수는 set을 받아와 같은 set인지 판단한다.
+
+출처:https://brenden.tistory.com/34
